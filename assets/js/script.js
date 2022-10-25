@@ -16,11 +16,11 @@ $('.selector-ripples').ripples({
     let $el1 = $('.selector-ripples-auto');
     let x1 = Math.random() * $el1.outerWidth();
     let y1 = Math.random() * $el1.outerHeight();
-    console.log(x1);
-    console.log(y1);
+    // console.log(x1);
+    // console.log(y1);
     let dropRadius1 = 20;
     let strength1 = 0.08 + Math.random() * 0.08;
-    console.log(strength1);
+    // console.log(strength1);
     $el1.ripples('drop', x1, y1, dropRadius1, strength1);
 
     setInterval(function() {
