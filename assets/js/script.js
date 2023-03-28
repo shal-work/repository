@@ -41,6 +41,8 @@ layer.forEach(item => {
     item.addEventListener('mousemove', e => {
         // let mouseX = e.pageX - e.target.offsetLeft;
         // let mouseY = e.pageY - e.target.offsetTop;
+
+        // layerX/layerY - устарели надо e.offsetX / e.offsetY 
         let layerX = e.layerX - item.offsetWidth/2;
         let layerY = e.layerY - item.offsetHeight/2;
         item.style.transform = 'translate(' + layerX / -10 + 'px ,' + layerY / 20 + 'px)' + ' ' + 'scale(' +1.05 +')';
