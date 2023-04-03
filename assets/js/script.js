@@ -1,12 +1,12 @@
+//для булькания от мыши
 $('.selector-ripples').ripples({
     resolution: 256,
     dropRadius: 20,
     perturbance: 0.14
 });
 
-
 // $(document).ready(function() {
-	
+	//для автоматического булькания 
     $('.selector-ripples-auto').ripples({
         resolution: 256,
         dropRadius: 20,
@@ -34,6 +34,8 @@ $('.selector-ripples').ripples({
 // });
 
 
+
+//эфект при наведении на блок небольшое движение
 const layer = document.querySelectorAll('.selector');
 layer.forEach(item => {
     // console.log('width: ', item.offsetWidth );
@@ -51,6 +53,9 @@ layer.forEach(item => {
     });
     item.addEventListener('mouseout', e => {
         item.style.transform = 'translate(0px , 0px)' + ' ' + 'scale(' + 1 +')';
+        item.style.webkitTransform = 'translate(0px , 0px)' + ' ' + 'scale(' + 1 +')'; //для iOs
+        // console.log('webkitTransform: ', item.style.webkitTransform);
+
     });
 });
 
