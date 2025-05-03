@@ -1,5 +1,7 @@
-const layer1 = document.querySelectorAll('.selector');
-layer1.forEach(item => {
+
+//эфект при наведении на блок небольшое движение
+const layer = document.querySelectorAll('.selector');
+layer.forEach(item => {
     // console.log('width: ', item.offsetWidth );
     // console.log('offsetHeight: ', item.offsetHeight );
     item.addEventListener('mousemove', e => {
@@ -17,5 +19,6 @@ layer1.forEach(item => {
         item.style.transform = 'translate(0px , 0px)' + ' ' + 'scale(' + 1 +')';
         item.style.webkitTransform = 'translate(0px , 0px)' + ' ' + 'scale(' + 1 +')'; //для iOs
         // console.log('webkitTransform: ', item.style.webkitTransform);
+
     });
 });
